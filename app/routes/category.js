@@ -14,6 +14,10 @@ export default Ember.Route.extend({
         return category.save();
       });
       this.transitionTo('category');
+    },
+    delete(category) {
+      category.destroyRecord();
+      this.transitionTo('index');
     }
   }
 });
