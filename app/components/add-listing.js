@@ -7,13 +7,14 @@ export default Ember.Component.extend({
     addListing() {
       this.set('showListingForm', true)
     },
-    submit(category) {
+    submit(category, currentDate) {
       var params = {
         name: this.get('listing'),
         date: Date.now(),
         description: this.get('description'),
         category: category
       };
+      debugger;
       this.sendAction('saveListing', params);
     }
   }

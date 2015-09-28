@@ -11,8 +11,9 @@ export default Ember.Component.extend({
       var params = {
         name: this.get('name')
       };
-      this.sendAction('saveCategory', params);
+      this.set('name', '');
       this.set('showCategoryForm', false);
+      this.sendAction('saveCategory', params);
     }
   }
 });
