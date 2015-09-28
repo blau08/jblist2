@@ -1,5 +1,12 @@
-{{model.name}}
+<h2>{{model.name}}</h2>
 
-{{model.description}}{{format-date model.date}}
+<div class="listing-date">
+  {{format-date model.date}}
+</div>
+
+<div class="listing-description">
+  {{model.description}}
+</div>
+
 
 {{outlet}}

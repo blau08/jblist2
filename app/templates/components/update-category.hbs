@@ -1,7 +1,7 @@
 {{#if showUpdateForm}}
   <label for="name">Name</label>
   {{input value=name id="name"}}
-  <button {{action 'submit' category}}>Submit</button>
+  <button class="btn btn-default"{{action 'submit' category}}>Submit</button>
 {{else}}
-  <button {{action 'update'}}>Update</button>
+  <button class="btn btn-default"{{action 'update'}}>Update</button>
 {{/if}}

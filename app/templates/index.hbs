@@ -1,9 +1,9 @@
-<h3>Category</h3>
-
-<h2>Today's date is {{current-date}}</h2>
+<div class="jumbotron">
+  <h1 id=indexHeader>JBList</h1>
+  <h3>Category</h3>
+</div>
 
 {{add-category category=model saveCategory='saveCategory'}}
-
 <ul>
   {{#each model as |category|}}
     {{category-tile category=category}}

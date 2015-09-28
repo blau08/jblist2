@@ -1,6 +1,7 @@
-{{model.name}}
+<div class="container">
+<h2>{{model.name}}</h2>
 
-<button {{action 'delete' model}}>Delete</button>
+<button class="btn btn-default"{{action 'delete' model}}>Delete</button>
 {{update-category category=model update='update'}}
 
 {{add-listing category=model saveListing='saveListing'}}
@@ -13,4 +14,6 @@
       </li>
       {{/each}}
   </ul>
+</div>
+
 </div>

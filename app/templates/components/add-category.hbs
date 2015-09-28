@@ -1,9 +1,9 @@
 {{#if showCategoryForm}}
-<div id="name">
+<div class="container">
   <form>
     <label for="category">Category</label>
     {{input value=name id='name' placeholder="Name"}}
-    <button {{action 'submit' category}}>Submit</button>
+    <button class="btn btn-default"{{action 'submit' category}}>Submit</button>
   </form>
 </div>
 {{else}}
