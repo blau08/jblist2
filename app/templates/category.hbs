@@ -1,6 +1,7 @@
 {{model.name}}
 
 <button {{action 'delete' model}}>Delete</button>
+{{update-category category=model update='update'}}
 
 {{add-listing category=model saveListing='saveListing'}}
 
