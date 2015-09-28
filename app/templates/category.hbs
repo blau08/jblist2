@@ -1,5 +1,15 @@
 {{model.name}}
 
-{{model.listing}}
-
 {{add-listing category=model saveListing='saveListing'}}
+
+<div id="name">
+  <ul>
+    {{#each model.listing as |listing|}}
+      <li>
+      <!-- {{#link-to 'listing' category.listing.id}} -->
+      {{listing.name}}{{listing.description}}
+      <!-- {{/link-to}} -->
+      </li>
+      {{/each}}
+  </ul>
+</div>

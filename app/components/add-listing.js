@@ -9,12 +9,11 @@ export default Ember.Component.extend({
     },
     submit(category) {
       var params = {
-        listing: this.get('listing'),
+        name: this.get('listing'),
         date: Date.now(),
         description: this.get('description'),
         category: category
       };
-      debugger;
       this.sendAction('saveListing', params);
     }
   }
