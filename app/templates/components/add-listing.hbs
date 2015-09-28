@@ -1,0 +1,13 @@
+{{#if showListingForm}}
+<div id="name">
+  <form>
+    <label for="listing"></label>
+    {{input value=listing id='listing' placeholder="Name"}}
+    <label for="description">Description</label>
+    {{input value=description id="description" placeholder="Description"}}
+    <button {{action 'submit' category}}>Submit</button>
+  </form>
+</div>
+{{else}}
+  <button {{action 'addListing'}}>Add Listing</button>
+{{/if}}
