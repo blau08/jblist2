@@ -4,11 +4,9 @@
 
 <div id="name">
   <ul>
-    {{#each model.listing as |listing|}}
+    {{#each model.listings as |listing|}}
       <li>
-      <!-- {{#link-to 'listing' category.listing.id}} -->
-      {{listing.name}}{{listing.description}}
-      <!-- {{/link-to}} -->
+        {{display-listing listing=listing}}
       </li>
       {{/each}}
   </ul>
