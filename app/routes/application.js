@@ -8,8 +8,13 @@ export default Ember.Route.extend({
 
   actions: {
     signIn: function(provider) {
+        debugger;
       this.get("session").open("firebase", { provider: provider}).then(function(data) {
-        provider: this.get('password');
+        var params = {
+          email: this.get("email"),
+          password: this.get("password"),
+        };
+          this.transitionTo('about');
       });
     },
 
